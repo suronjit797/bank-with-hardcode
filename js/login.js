@@ -33,7 +33,7 @@ loginBtn.addEventListener('click', (e) => {
     } else if (datas[searchUser].password !== password) {
         console.log('user and password doesnot match')
     } else {
-        window.location.pathname = 'bank.html'
+        window.location.pathname = './bank.html'
     }
         
         
