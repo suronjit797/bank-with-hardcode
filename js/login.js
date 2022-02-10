@@ -15,9 +15,6 @@ let datas = [
 ]
 
 
-
-
-
 // dom from html
 let loginBtn = document.getElementById('login_btn')
 let emailFild = document.getElementById('email_fild')
@@ -31,10 +28,8 @@ loginBtn.addEventListener('click', (e) => {
     if (searchUser == -1) {
         console.log('user not found')
     } else if (datas[searchUser].password !== password) {
-        console.log('user and password doesnot match')
+        console.log('user and password does not match')
     } else {
         window.location.pathname = 'bank-with-hardcode/bank.html'
     }
-        
-        
 })

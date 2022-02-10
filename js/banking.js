@@ -7,9 +7,7 @@ function takeInput(inputId, outputId, isAdd) {
     if (!isAdd && balanceValue < getElementValue) {
         getElementValue = 0
         console.log('you haven\'t enough money')
-    } 
-
-
+    }
     // set output
     let outputValueText = document.getElementById(outputId)
     let outputValue = parseFloat(outputValueText.innerText)
@@ -24,13 +22,10 @@ function takeInput(inputId, outputId, isAdd) {
     }
     return outputValue
 }
-
 // deposit
 document.getElementById('addDepo_btn').addEventListener('click', () => {
     takeInput('addDepo', 'deposit_value', true)
 })
-
-
 // withdraw
 document.getElementById('addWith_btn').addEventListener('click', () => {
     takeInput('addWith', 'withdraw_value', false)
