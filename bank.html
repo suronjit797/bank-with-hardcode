@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+</head>
+
+<body>
+    <main class="container mx-auto text-white bg-indigo-500 p-20 my-8 rounded">
+        <h1 class="text-center text-5xl mb-8 font-bold">Your Transactions</h1>
+
+        <div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-orange-400 rounder p-8 text-center">
+                    <h3 class="text-4xl font-semibold">Deposit</h3>
+                    <h2 class="text-5xl font-bold my-3">$<span id="deposit_value">00</span> </h2>
+                </div>
+                <div class="bg-lime-400 rounder p-8 text-center">
+                    <h3 class="text-4xl font-semibold">Withdraw</h3>
+                    <h2 class="text-5xl font-bold my-3">$<span id="withdraw_value">00</span> </h2>
+                </div>
+                <div class="bg-blue-400 rounder p-8 text-center">
+                    <h3 class="text-4xl font-semibold">Balance</h3>
+                    <h2 class="text-5xl font-bold my-3">$<span id="balance_value">1000</span> </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 mt-4 gap-4">
+                <div class="bg-green-400 rounder p-8 text-center flex">
+                    <input type="number" class="p-3 w-full text-black" name="" id="addDepo">
+                    <button id="addDepo_btn" class="px-5 rounded text-white py-3 bg-red-500">Deposit</button>
+                </div>
+
+                <div class="bg-red-400 rounder p-8 text-center flex">
+                    <input type="text" class="p-3 w-full text-black" name="" id="addWith">
+                    <button id="addWith_btn" class="px-5 rounded text-white py-3 bg-green-500">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./js/banking.js"></script>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
